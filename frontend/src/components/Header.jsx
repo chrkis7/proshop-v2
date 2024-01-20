@@ -3,7 +3,6 @@ import { FaCartShopping, FaUser } from 'react-icons/fa6'
 import { LinkContainer } from 'react-router-bootstrap'
 import logo from '../assets/logo.png'
 
-
 const Header = () => {
   return (
     <header>

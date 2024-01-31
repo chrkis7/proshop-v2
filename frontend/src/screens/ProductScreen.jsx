@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 import Rating from '../components/Rating'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-import { useGetSingleProductQuery } from '../slices/productsApiSlice'
+import { useGetProductDetailsQuery } from '../slices/productsApiSlice'
 import { addToCart } from '../slices/cartSlice'
 
 const ProductScreen = () => {
@@ -16,7 +16,7 @@ const ProductScreen = () => {
 
   const dispatch = useDispatch()
 
-  const { data: product, isLoading, error } = useGetSingleProductQuery(productId)
+  const { data: product, isLoading, error } = useGetProductDetailsQuery(productId)
 
   const [qty, setQty] = useState(1)
 

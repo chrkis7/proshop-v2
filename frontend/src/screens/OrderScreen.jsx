@@ -177,7 +177,7 @@ const deliverOrderHandler = async () => {
                   {isLoadingPayOrder && <Loader />}
                   {isPending ? <Loader /> : (
                     <div>
-                      {/* <Button onClick={ onApproveTest } style={{ marginBottom: '10px'}}>Test Pay Order</Button> */}
+                      <Button onClick={ onApproveTest } style={{ marginBottom: '10px'}}>Test Pay Order</Button> 
                       <div>
                         <PayPalButtons
                           createOrder={createOrder}
